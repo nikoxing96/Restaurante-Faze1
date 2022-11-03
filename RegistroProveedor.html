@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Registro Cliente</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<style>
+    .menu{
+    text-align: center;
+    list-style:none;
+    padding: 0;
+    background: #C8E6C9;
+    width:100%;
+    max-width: 3000px;
+    margin: auto;
+  }
+  .menu li a{
+    text-decoration: none;
+    color:#616161;
+    padding:20px;
+    display: block;
+  }
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a:hover{
+    background:white;
+  }
+
+</style>
+<body>
+    <ul class="menu">
+        <li class=""><a href="Index.html">Inicio</a</li>
+        <li class=""><a href="#">Nuestra Historia</a</li>
+        <li class=""><a href="#">Carta</a</li>
+        <li class=""><a href="Login.html">Sesion Cliente</a</li>
+        <li class=""><a href="LoginEmpresa.html">Sesion Empresa</a</li>
+        <li class=""><a href="#">Acerca de</a></li>  
+    </ul>
+    <h1>Registro de Cuenta</h1>
+    <form action="ProveedorRegistro.php" method="post" class="form-register">
+        <h2 class="form__titulo">Crear Cuenta</h2>
+        <div class="contenedor-inputs">
+            <div class="ProveedorRegistro"><input type="text" name="proveedor" id="proveedor" placeholder="proveedor" class="input-50" required></div>
+            <div class="ContactoRegistro"><input type="text" name="contacto" id="contacto" placeholder="contacto" class="input-50" required></div>
+            <div class="TelefonoRegistro"><input type="text" name="telefono" id="telefono" placeholder="telefono" class="input-50" required></div>
+            <div class="DireccionRegistro"><input type="email" name="direccion" id="direccion" placeholder="direccion" class="input-100" required></div>
+            <input type="submit" value="Registrar" class="btn-enviar">
+            <p class="form__link">Si ya tienes cuenta <a href="Login.html">Ingresa aqui</a></p>                   
+        </div> 
+    </form>
+ </body>
+</html>

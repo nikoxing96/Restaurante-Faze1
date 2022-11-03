@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=UTF-8 />
+    <title>Login Empresa</title>
+    <link rel="stylesheet" href="/css/Estilos-Inicio.css">
+</style>
+<meta name="description" content="Esta pagina te servira para resgistrarte y reservar una mesa en este retaurante" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Estilos-empresa.css">
+<title>Sesion Empresa</title>
+</head>
+<body>
+    <ul class="menu">
+        <li class=""><a href="Index.html">Inicio</a</li>
+        <li class=""><a href="#">Nuestra Historia</a</li>
+        <li class=""><a href="#">Carta</a</li>
+        <li class=""><a href="Login.html">Sesion Cliente</a</li>
+        <li class=""><a href="LoginEmpresa.html">Sesion Empresa</a</li>
+        <li class=""><a href="#">Acerca de</a></li>  
+    </ul>
+    <div class=inicio>
+        <h1>Sesion Empresa</h1>
+        <form action="ValidarCargo.php" method="post" class="form-Inicio">
+            <div class="username">
+                <input type="email" name="correo" placeholder="Correo" class="input-100" maxlength="50" required>
+            </div>
+            <div class="username">
+                <input type="password" name="clave" placeholder="Contraseña" maxlength="50" required>
+            </div>
+            <div class="recordar">¿Olvido su contraseña?</div>
+            <input type="submit" value="Iniciar Sesion">
+            <div class="registrarse">
+                <a href="Login.html">Si usted es cliente haga click aca</a>
+            </div>
+        </form>
+    </div>      
+</body>
+</html>
+
+<!--agregar formato email. pattern=".+@globex\.com"-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <h1>Registro de Empleado</h1>
+    <form action="EmpleadoRegistro.php" method="post" class="form-register">
+        <h2 class="form__titulo">Crear Cuenta</h2>
+        <div class="contenedor-inputs">
+            <div class="NombreRegistro"><input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input-50" required></div>
+            <div class="ApellidoRegistro"><input type="text" name="apellido" id="apellido" placeholder="Apellido" class="input-50" required></div>
+            <div class="RutCliente"><input type="text" name="rut" id="rut" placeholder="rut" class="input-50" required></div>
+            <div class="EmailRegistro"><input type="email" name="correo" id="correo" placeholder="Correo" class="input-100" required></div>
+            <div class="ClaveRegistro"><input type="password" name="clave" id="clave" placeholder="Clave" class="input-50" required></div>
+            <div class="TelefonoRegistro"><input type="text" name="telefono" id="telefono" placeholder="Telefono" class="input-100" required></div>
+            <div class="IdCargoRegistro">
+            <label for="cargo">Tipo de Usuario</label>
+            <select name="cargo" id="cargo">
+                <option value="1">Administrador</option>
+                <option value="2">Finanzas</option>
+                <option value="3">Bodeguero</option>
+                <option value="4">Cocina</option>
+                <option value="5">Recepcionista</option>
+            </select>
+            </div>
+            <input type="submit" value="Registrar" class="btn-enviar">                 
+        </div> 
+    </form>
+</body>
+</html>
